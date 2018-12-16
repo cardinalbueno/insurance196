@@ -6,8 +6,8 @@ body {
     min-width: 1040px;
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
     font-family: "Arial", sans-serif;
     color: #404040;
     background-color: white;
@@ -44,8 +44,9 @@ body {
 }
 
 .main-nav li {
+    min-width: 70px;
     float: left;
-    margin-right: 50px;
+    margin-right: 10px;
     text-transform: uppercase;
 }
 
@@ -54,5 +55,21 @@ body {
 }
 
 .main-nav a {
+  padding: 5px 10px;
   text-decoration: none;
+  border-left: 2px solid brown;
+}
+
+.main-nav a:hover {
+  background-color: lightblue;
+  color: white;
+  text-shadow: -1px -1px 2px green, 1px 1px 2px grey;
+}
+
+.main-nav a:active {
+  color: grey;
+}
+
+.main-nav a:visited {
+  color: grey;
 }
