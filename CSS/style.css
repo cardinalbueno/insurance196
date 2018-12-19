@@ -30,11 +30,12 @@ body {
 
 .page-header .logo {
   float: left;
-  padding: 10px 10px;
+  padding: 0 10px;
+  border-bottom: 3px solid #045704;
 }
 
 .main-nav {
-    float: right;
+    float: left;
     width: 750px;
     margin: 0;
     margin-top: 18px;
@@ -55,15 +56,14 @@ body {
 }
 
 .main-nav a {
-  padding: 5px 10px;
+  padding: 10px 10px;
   text-decoration: none;
-  border-left: 2px solid brown;
+  border-left: 2px solid #301600;
 }
 
 .main-nav a:hover {
   background-color: lightblue;
   color: white;
-  text-shadow: -1px -1px 2px green, 1px 1px 2px grey;
 }
 
 .main-nav a:active {
