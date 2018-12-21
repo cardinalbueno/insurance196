@@ -105,17 +105,14 @@ body {
 }
 
 .img_wrap {
+  
   float: right;
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 300px;
   overflow: hidden;
-
-}
-
-.img_wrap img {
-  display: none;
-  min-height: 200px;
-  min-width: 300px;
+  background: url("../img/car.jpg") no-repeat;
+  background-position: bottom;
+  border-radius: 10px;
 }
 
 .slider-list {
@@ -126,8 +123,9 @@ body {
 }
 
 .slider-feature {
-    padding: 20px 0 20px 40px;
+    padding: 20px 0 0 40px;
     width: 350px;
+    min-height: 300px;
     background: #CCE2CC;
     border-radius: 10px;
 }
