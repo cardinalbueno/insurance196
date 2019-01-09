@@ -6,72 +6,128 @@
   <meta charset="utf-8">
   <title>ОНЛАЙН Страховка</title>
   <link href="CSS/style.css" rel="stylesheet">
+  <link href="CSS/copyright.css" rel="stylesheet">
+  <link href="CSS/media.css" rel="stylesheet">
+  <link href="CSS/modalcontacts.css" rel="stylesheet">
+  <link href="CSS/calc.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body>
   <header>
-  <div class="header fixator">
-    <div class="header__logo"><img src="img/logowhite.png" alt="Страховка196" width="240">
+    <div class="header fixator">
+      <div class="header__logo"><img src="img/logowhite.png" alt="Страховка196" width="240">
+      </div>
+      <ul class="header__navigation">
+        <li class="header__navigation--item"><a href="#features">Преимущества </a></li>
+        <li class="header__navigation--item"><a href="price">Цены</a></li>
+        <li class="header__navigation--item"><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="header__phone">
+        <a href="tel:+79222922077" class="phone">Позвонить</a>
+      </div>
     </div>
-    <ul class="header__navigation">
-      <li class="header__navigation--item"><a href="#features">Преимущества  </a></li>
-      <li class="header__navigation--item"><a href="price">Цены</a></li>
-      <li class="header__navigation--item"><a href="#">Контакты</a></li>
+    <div class="modal" id="contacts">
+    <div class="modal__contacts">
+      <h3>Вы можете связаться с нашими специалистами по номерам:</h3>
+        <ul>
+          <li><a href="tel:+79058034340">+79058034340</a></li>
+          <li><a href="tel:+79530397355">+79530397355</a></li>
+          <li><a href="tel:+79222922077">+79222922077</a></li>
+        </ul>
+      <h3>Или по адресу:</h3>
+      <strong>г. Екатеринбург ул. Крылова 27 офис 20</strong>
+      <div class="modal__contacts--map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01e1b5f1a17c60aa44253c822e0ed867503db30ccd921fb7795c02c52972a414&amp;width=760&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="modal__contacts--map-tablet">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01e1b5f1a17c60aa44253c822e0ed867503db30ccd921fb7795c02c52972a414&amp;width=540&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <a class="close" href=" " title="Закрыть">&times;</a>
+    </div>
+    </div>
+  </header>
+<div class="features">
+
+  <div class="features__message">
+    <h2><span class="bang">помощь</span> в оформлении диагностической карты!</h2>
+    <ul class="features__message--list">
+      <li>Бесплатный рассчет стоимости</li>
+      <li>Скидки за безаварийность</li>
+      <li>Оформление полиса в течение<br>30 минут</li>
     </ul>
-    <div class="header__phone">
-      <a href="tel:+79222922077" class="phone">Позвонить</a>
-    </div>
-  </div>
-</header>
-  <div class="features">
-
-    <div class="features__message">
-      <h2><span class="bang">помощь</span> в оформлении диагностической карты!</h2>
-          <ul class="features__message--list">
-            <li>Бесплатный рассчет стоимости</li>
-            <li>Скидки за безаварийность</li>
-            <li>Оформление полиса в течение<br>30 минут</li>
-          </ul>
-          <div class="features__message--btn">
-            <a href="#">Рассчитать стоимость</a>
-          </div>
+    <div class="features__message--btn">
+      <a href="#calc">Рассчитать стоимость</a>
     </div>
 
+    <div class="modal-calc" id="calc">
+    <div class="calc">
+      <iframe id="calc-iframe" width="100%" height="300" style="width:1px;
+        min-width: 100%;" scrolling="no" src="https://calcus.ru/kalkulyator-osago?embed=1&region_id=262&bgcolor=CECECE&buttoncolor=FF9536" frameborder="0">
+      </iframe>
+      <script>
+        window.addEventListener('message', function(event) {
+          if (height = event.data['height']) {
+            document.getElementById('calc-iframe').style.height = height + 'px'
+          }
+        })
+      </script>
+      <a class="close" href=" " title="Закрыть">&times;</a>
+    </div>
+  </div>
+  </div>
     <div class="features__message">
     </div>
   </div>
+
   <span class="gg" id="features"> </span>
-  <div class="main">
-  <div class="main__item">
-    <img src="img/car-insurance.png" height="52" width="52" alt="insurance">
-    <h3>Электронный полис ОСАГО<br>в вашем смартфоне</h3>
-    <p>Оформление в любом регионе России! Забудьте <br>об очередях и походах в офисы</p>
-  </div>
-  <div class="main__item">
-    <img src="img/safepay.png" height="52" width="52" alt="safepay">
-    <h3>Безопасная и быстрая оплата</h3>
-    <p>Оплата осуществляется в защищенном режиме и практически мгновенно</p>
-  </div>
 
-  <div class="main__item">
-    <img src="img/halfhour.png" height="52" width="52" alt="clock">
-    <h3>Обработка документов в течение получаса</h3>
-    <p>Полис ОСАГО придет на электронную почту сразу после оплаты страховой премии</p>
-  </div>
-</div>
-  <footer>
-  <div class="footer">
-    <div class="footer__copyright">
-      <span>buenobueno production <sup>&copy;</sup></span>
+  <div class="main">
+
+    <div class="main__item">
+      <img src="img/car-insurance.png" height="52" width="52" alt="insurance">
+      <h3>Электронный полис ОСАГО<br>в вашем смартфоне</h3>
+      <p>Оформление в любом регионе России! Забудьте<br>об очередях и походах в офисы</p>
     </div>
+    <div class="main__item">
+      <img src="img/safepay.png" height="52" width="52" alt="safepay">
+      <h3>Безопасная и быстрая оплата</h3>
+      <p>Оплата осуществляется в защищенном режиме и практически мгновенно</p>
+    </div>
+
+    <div class="main__item">
+      <img src="img/halfhour.png" height="52" width="52" alt="clock">
+      <h3>Обработка документов в течение получаса</h3>
+      <p>Полис ОСАГО придет на электронную почту сразу после оплаты страховой премии</p>
+    </div>
+  </div>
+  <div class="main__item--features">
+
+    <p>Мы - <strong>команда профессионалов</strong>, обладающих большим опытом работы в
+      различных сферах страхового дела, с радостью предоставим Вам интересующую информацию,
+      окажем оперативную помощь и предложим готовое решение <strong>индивидуально для каждого
+      клиента</strong> по вопросам страхования.</p>
+    <p>Наши специалисты учтут все Ваши пожелания, оперативно и грамотно подберут страховую
+      компанию и страховой продукт, обеспечат квалифицированное сопровождение договора и,
+      в случае спорных ситуаций, предоставят своевременную помощь в урегулировании
+      разногласий со страховой компанией.</p>
+    <p>Мы сотрудничаем с ведущими страховыми компаниями, что позволит Вам обладать всей
+       информацией о предложениях на страховом рынке, а так же поможет сэкономить
+       Ваше время и деньги.</p>
+     </div>
+
+  <footer>
+    <div class="footer">
+      <div class="footer__copyright">
+        <span>buenobueno production <sup>&copy;</sup></span>
+      </div>
       <div class="footer__social">
         <a href="https://vk.com/strahovka_196"><img src="img/social__vk.png" alt="VK" height="32" width="32"></a>
         <a href="mailto:strahovka196@gmail.com"><img src="img/social__mail.png" alt="Email" height="32" width="32"></a>
         <a href="skype:+79012109811"><img src="img/social__skype.png" alt="Skype" height="32" width="32"></a>
       </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 </body>
 

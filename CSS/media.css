@@ -1,0 +1,53 @@
+@media (max-width:500px) {
+  .header {
+    display: block;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header__phone {
+    width: 80%;
+    float: left;
+    margin-left: 20%;
+  }
+
+  .features {
+    display: block;
+    height: auto;
+    width: auto;
+  }
+
+  .features__message--btn {
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width:501px) and (max-width:960px) {
+  .header__navigation--item:first-child {
+    margin-left: 5%;
+  }
+  .features{
+    background: #66b8c3 url("../img/lady2.png") no-repeat 60% 0;
+  }
+  .features__message {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width : 961px) {
+  .header__phone {
+    margin-left: 15%;
+  }
+  .features{
+    background: #66b8c3 url("../img/lady2.png") no-repeat 50% 0;
+  }
+}
