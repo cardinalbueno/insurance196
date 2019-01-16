@@ -7,23 +7,9 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 6;
+  z-index: 99998;
   opacity: 0;
   pointer-events: none;
-}
-
-.calc {
-  z-index: 7;
-  box-sizing: border-box;
-  position: fixed;
-  padding: 20px;
-  width: 760px;
-  height: auto;
-  background: grey;
-  top: 7%;
-  left: 30%;
-  border-radius: 10px;
-  box-shadow: 0 -2px 3px grey, 0 1px 3px grey;
 }
 
 .modal-calc:target {
@@ -31,31 +17,16 @@
   pointer-events: auto;
 }
 
-.close {
-  text-decoration: none;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  border: none !important;
-  border-radius: none !important;
-  text-transform: uppercase;
-  width: 15px;
-  height: 15px;
-  font-size: 1.6em;
-  text-align: center;
-  vertical-align: middle !important;
-  box-shadow: none !important;
-}
-
-.close:hover {
-  font-size: 2.4em;
-  text-align: center;
-  vertical-align: super;
-}
-
-@media (max-width:500px) {
-  .calc {
-    width: 400px;
-    left: 0;
-  }
+.calc {
+  z-index: 99999;
+  position: fixed;
+  padding: 20px;
+  min-width: 500px;
+  max-width: 760px;
+  height: auto;
+  background: white;
+  top: 7%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: 0 -2px 3px grey, 0 1px 3px grey;
 }
